@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Interview</title>
+
+    <script type="module" src="../saved_code.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/monokai.min.css">
+</head>
+<body>
+<header>
+    <h1 id="head"> Coding Interviews </h1>
+    <img id="logo" src="images/Logo.png" alt="Head">
+
+    <div class="top-bar">
+        <div id="bar-part-1" class="bar-part"></div>
+        <div id="bar-part-2" class="bar-part"></div>
+        <div id="bar-part-3" class="bar-part"></div>
+
+    </div>
+</header>
+<div class="container">
+    <nav>
+        <ul class="menu">
+            <li class="menu-item">
+                <button class="dropdown-btn">Entry questions</button>
+                <div class="dropdown-container">
+
+                    <ul>
+                        <li data-image="images/Entry.png">Warm up</li>
+                        <li id="Pics" data-image="images/fib.png">Fibonacci.</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item">
+                <button class="dropdown-btn">Intermediate</button>
+                <div class="dropdown-container">
+                    <ul>
+                        <li data-image="images/Substring.png">Longest common substring.</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item">
+                <button class="dropdown-btn">Advanced</button>
+                <div class="dropdown-container">
+                    <ul>
+                        <li data-image="images/knapsack.png">Knapsack.</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div class="content">
+                <div class="image-container">
+                    <img id="question-image" src="" alt="" style="display:none; width: 100%; max-width: 800px; margin-top: 20px;">
+                </div>
+                <div class="editor-container">
+                    <textarea id="code-editor"></textarea>
+                    <button id="save-code-btn">Save Code</button>
+                    <button id="execute-code-btn">Execute Code</button>
+                    <button id="solution"> Hint </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<footer>
+    <p>&copy; 2024 Coding Interviews Universität Heidelberg. All rights not reserved.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+<script type="module" src="main.js"></script>
+
+</body>
+</html>
